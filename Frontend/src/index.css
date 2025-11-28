@@ -16,7 +16,32 @@ code {
     monospace;
 }
 
-/* 👇 This fixes the @use-gesture touch-action warning and makes drag nice on touch devices */
+/* allow canvas to receive pointer drag reliably */
 canvas {
   touch-action: none;
+  -ms-touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: auto;
+  cursor: grab;
+  outline: none;
 }
+
+/* ensure full-viewport root */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ensure canvas container receives pointer events and fills viewport */
+.canvas-fullscreen, .App, .app-root {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 9999; /* high so overlays don't block interaction */
+  pointer-events: auto;
+}
+
+/* if there are overlays, prefer making them non-interactive when hidden:
+   .some-overlay.hidden { pointer-events: none; } */

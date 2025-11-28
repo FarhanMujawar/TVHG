@@ -44,8 +44,8 @@ export default function TitlebarImageList() {
     setActiveCard(null);
   };
 
-  const description = (path) => {
-    navigate('/plant-info'); // Navigate to the path when a button is clicked
+  const description = (plantTitle) => {
+    navigate('/plant-info', { state: { plant: plantTitle } }); // Navigate to the path when a button is clicked
   };
   const navigate = useNavigate();
   return (
@@ -58,13 +58,7 @@ export default function TitlebarImageList() {
         </ListSubheader>
       </ImageListItem>
       {itemData.map((item) => (
-        <ImageListItem key={item.img} style={{ width: '16rem', height: '16rem' }}>
-          {/* <img
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            alt={item.title}
-            loading="lazy"
-          /> */}
+        <ImageListItem key={item.title} style={{ width: '16rem', height: '16rem' }}>
           {item.img}
           <ImageListItemBar
             title={item.title}
@@ -109,7 +103,7 @@ export default function TitlebarImageList() {
                 </Tooltip>
                 <IconButton
                   sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                  onClick={() => description()}
+                  onClick={() => description(item.title)}
                   aria-label="read more"
                 >
                   <ReadMoreIcon />
@@ -133,31 +127,21 @@ const itemData = [
   //   cols: 2,
   //   featured: true,
   // },
-  // {
-  //   img: plant2,
-  //   title: 'Plant 2',
-  //   author: '@plantlover',
-  // },
-  // {
-  //   img: plant3,
-  //   title: 'Plant 3',
-  //   author: '@plantlover',
-  // },
   {
     img: <PlantModel1 />,
-    title: 'Plant 4',
+    title: 'Aloe Vera',
     author: '@plantlover',
     cols: 2,
   },
   {
     img: <img srcSet={plant1} src={plant1} alt='plant1' loading="lazy" />,
-    title: 'Plant 5',
+    title: 'Lavender',
     author: '@plantlover',
     cols: 2,
   },
   {
     img: <img srcSet={plant2} src={plant2} alt='plant2' loading="lazy" />,
-    title: 'Plant 6',
+    title: 'Tulsi',
     author: '@plantlover',
     rows: 2,
     cols: 2,
@@ -165,12 +149,12 @@ const itemData = [
   },
   {
     img: <PlantModel2 />,
-    title: 'Plant 7',
+    title: 'Cactus',
     author: '@plantlover',
   },
   {
     img: <PlantModel3 />,
-    title: 'Plant 1',
+    title: 'Salvia Rosmarinus',
     author: '@plantlover',
     rows: 2,
     cols: 2,
@@ -178,29 +162,24 @@ const itemData = [
   },
   {
     img: <img srcSet={plant7} src={plant7} alt='plant7' loading="lazy" />,
-    title: 'Plant 2',
+    title: 'Basil',
     author: '@plantlover',
   },
-  // {
-  //   img: plant3,
-  //   title: 'Plant 3',
-  //   author: '@plantlover',
-  // },
   {
     img: <img srcSet={plant4} src={plant4} alt='plant4' loading="lazy" />,
-    title: 'Plant 4',
+    title: 'Wellness Plant 1',
     author: '@plantlover',
     cols: 2,
   },
   {
     img: <img srcSet={plant5} src={plant5} alt='plant5' loading="lazy" />,
-    title: 'Plant 4',
+    title: 'Wellness Plant 2',
     author: '@plantlover',
     cols: 2,
   },
   {
     img: <img srcSet={plant6} src={plant6} alt='plant6' loading="lazy" />,
-    title: 'Plant 5',
+    title: 'Wellness Plant 3',
     author: '@plantlover',
     cols: 2,
   },

@@ -17,37 +17,37 @@ import { useNavigate } from 'react-router-dom';
 const plantData = [
   {
     img: plant1,
-    description: <>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</>,
+    description: <>Aloe Vera is a succulent plant known for its gel-filled leaves. It has been used for centuries in traditional medicine to treat burns, wounds, and skin conditions. This low-maintenance plant thrives in warm climates and requires minimal watering.</>,
     isBookmarked: true,
   },
   {
     img: plant2,
-    description: <>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</>,
+    description: <>Lavender is an aromatic flowering plant prized for its calming properties. It's commonly used in aromatherapy to reduce stress and promote relaxation. The plant produces beautiful purple flowers and attracts pollinators to your garden.</>,
     isBookmarked: false,
   },
-  // {
-  //   img: plant3,
-  //   description: <>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</>,
-  //   isBookmarked: true,
-  // },
+  {
+    img: plant3,
+    description: <>Cactus is a hardy succulent plant adapted to arid environments. Known for its thick, waxy skin, the cactus can store water for extended periods. Many species produce vibrant flowers and require very little care, making them perfect for beginners.</>,
+    isBookmarked: true,
+  },
   {
     img: plant4,
-    description: <>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</>,
+    description: <>Mint is a refreshing herb with a cooling effect and distinctive aroma. It's commonly used in teas, cooking, and traditional medicine to aid digestion and freshen breath. Mint grows vigorously and spreads quickly, making it easy to cultivate.</>,
     isBookmarked: false,
   },
   {
     img: plant5,
-    description: <>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</>,
+    description: <>Basil is an aromatic culinary herb essential in Mediterranean cuisine. Rich in vitamins and antioxidants, basil is believed to have anti-inflammatory and antibacterial properties. It's perfect for adding fresh flavor to dishes and can be grown indoors year-round.</>,
     isBookmarked: true,
   },
   {
     img: plant6,
-    description: <>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</>,
+    description: <>Rosemary is an evergreen herb with needle-like leaves and a robust, piney aroma. It's used in cooking, aromatherapy, and traditional medicine to enhance memory and improve circulation. This resilient plant thrives in well-drained soil and sunny locations.</>,
     isBookmarked: false,
   },
   {
     img: plant7,
-    description: <>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</>,
+    description: <>Thyme is a small, hardy herb with tiny leaves and delicate flowers. It's valued in culinary traditions for its earthy flavor and in traditional medicine for its antimicrobial properties. Thyme is drought-tolerant and attracts beneficial insects to your garden.</>,
     isBookmarked: true,
   },
 ];

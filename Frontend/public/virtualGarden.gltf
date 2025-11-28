@@ -11092,43 +11092,43 @@
   ],
   "images": [
     {
-      "uri": "textures/Glass_Rough_baseColor.png"
+      "uri": "textures/Envi_baseColor.png"
     },
     {
-      "uri": "textures/Glass_Rough_metallicRoughness.png"
+      "uri": "textures/Envi_metallicRoughness.png"
     },
     {
-      "uri": "textures/Glass_Rough_normal.png"
+      "uri": "textures/Envi_normal.png"
     },
     {
-      "uri": "textures/WetConcrete_baseColor.png"
+      "uri": "textures/Envi_baseColor.png"
     },
     {
-      "uri": "textures/WetConcrete_metallicRoughness.png"
+      "uri": "textures/Envi_metallicRoughness.png"
     },
     {
-      "uri": "textures/WetConcrete_normal.png"
+      "uri": "textures/Envi_normal.png"
     },
     {
-      "uri": "textures/Grass_baseColor.png"
+      "uri": "textures/Envi_baseColor.png"
     },
     {
-      "uri": "textures/Grass_normal.png"
+      "uri": "textures/Envi_normal.png"
     },
     {
-      "uri": "textures/Plants_baseColor.png"
+      "uri": "textures/Aloe_vera_baseColor.png"
     },
     {
-      "uri": "textures/Plants_metallicRoughness.png"
+      "uri": "textures/Aloe_vera_metallicRoughness.png"
     },
     {
-      "uri": "textures/Plants_normal.png"
+      "uri": "textures/Aloe_vera_normal.png"
     },
     {
-      "uri": "textures/Bush_baseColor.png"
+      "uri": "textures/Aloe_vera_baseColor.png"
     },
     {
-      "uri": "textures/Bush_normal.png"
+      "uri": "textures/Aloe_vera_normal.png"
     }
   ],
   "materials": [
